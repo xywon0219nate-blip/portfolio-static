@@ -1,0 +1,78 @@
+/*
+    portfolio-static-style-sheet
+
+    반복되는 스타일을 변수로 정의 --> var()호출해서 사용 가능
+    변수, 상수 : --변수명, 상수명 = 값 정의;
+    예) --color--primary = white;
+    .header { color : var(--color--primary);}
+*/
+
+:root {
+    /*color-list*/
+    --color-white: #fff;
+    --color-black: #050a13;
+    --color-accent: #03e9f9;
+    --color-orange: #fd6413;
+    --color-gray: #1b1e26;
+    
+    /*container*/
+    --max-size-container:1200px;
+}
+
+/* commons(공통):폰트, 여백, 패딩, 글자 크기... */
+* {
+    font-family: 'Open Sans', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+ul {
+    list-style-type: none;
+}
+button {
+    border: 0;
+    outline: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* header start */
+.header {
+    background-color: var(--color-black);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-white);
+}
+.header-logo-img {
+    width: 36px;
+    height: 36px;
+}
+.header-logo-title {
+    font-size: 1.8rem;
+}
+ul.header-menu {
+    display: flex;
+    gap: 4px;
+}
+li.header-menu-item {
+    color: var(--color-white);
+    padding: 8px 16px;
+}
+a.header-menu-item-active {
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+}
+/* header end */
