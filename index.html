@@ -16,24 +16,262 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>portfolio-static</h1>
     <header class="header">
-        <div>
-            <div class="header-logo">
+        <div class="header-logo">
                 <img src="image/favicon.ico" alt="header-logo" class="header-logo-img">
                 <h1 class="header-logo-title">judy</h1>
-            </div>
         </div>
         <nav>
             <ul class="header-menu">
-                <li><a href="#home" class="header-menu-item active">HOME</a></li>
-                <li><a href="#about" class="header-menu-item">ABOUT</a></li>
-                <li><a href="#skills" class="header-menu-item">SKILLS</a></li>
-                <li><a href="#work" class="header-menu-item">MY WORK</a></li>
-                <li><a href="testimonial" class="header-menu-item">TESTIMONIAL</a></li>
-                <li><a href="#content" class="header-menu-item">CONTENT</a></li>
+                <li><a href="#home" class="header-menu-item active">Home</a></li>
+                <li><a href="#about" class="header-menu-item">About</a></li>
+                <li><a href="#skills" class="header-menu-item">Skills</a></li>
+                <li><a href="#work" class="header-menu-item">My Work</a></li>
+                <li><a href="#testimonial" class="header-menu-item">Testimonial</a></li>
+                <li><a href="#contact" class="header-menu-item">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="home">
+            <img src="image/favicon.ico" alt="home-avatar" class="home-avatar">
+            <h2 class="home-title">Hello<br>
+                I'm <strong class="home-title-strong">Junior Developer,</strong>
+                Judy
+            </h2>
+            <p class="homr-description">A software engineer currently residing in seoul, South korea</p>
+            <a class="home-contact" href="#">contact me</a>
+        </section>
+        <section id="about" class="section container">
+            <h2 class="title">About me</h2>
+            <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quaerat voluptas architecto in vel tempora, fugit ducimus. 
+                Quam ad dolor ratione quos recusandae, deserunt tempora impedit voluptatem modi. 
+                Perferendis, deserunt esse.
+            </p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major-icon"></i>
+                    <p>Front end</p>
+                    <p>HTML, CSS, JavaScript, React,WebAPIs</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major-icon"></i>
+                    <p>Mobile</p>
+                    <p>Android Studio, Reat Native, iOS, swift,Kotlin</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-server major-icon"></i>
+                    <p>Back end</p>
+                    <p>Java, JavaScript, Go, Kotlin</p>
+                </li>
+            </ul>
+            <ul class="jobs">
+                <li class="job">
+                    <img src="image/jobs/google.png" alt="google">
+                    <div>
+                        <p class="job-name"> Google as junior Software</p>
+                        <p class="job-period"> 2010 Oct - 2019 Oct</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img src="image/jobs/samsung.png" alt="samsung">
+                    <div>
+                        <p class="job-name"> Samsung as junior Software</p>
+                        <p class="job-period"> 2010 Oct - 2019 Oct</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="skills" class="section container">
+            <h2 class="title"> My Skills</h2>
+            <p class="description"> skills & Attributes</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque suscipit alias laudantium expedita consectetur dolorum
+                quasi quam quisquam hic eum quaerat eos dolorem nisi quis itaque,
+                dicta optio temporibus fuga!</p>
+            <div class="skills">
+                <article class="skills-coding">
+                    <h3 class="skills-title">Coding Skills</h3>
+                    <ul>
+                        <li class="bar">
+                            <div class="bar-title"><span>HTML</span><span>98%</span></div>
+                            <div class="bar-bg"><div class="bar-value html"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar-title"><span>CSS</span><span>90%</span></div>
+                            <div class="bar-bg"><div class="bar-value css"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar-title"><span>Typescript</span><span>80%</span></div>
+                            <div class="bar-bg"><div class="bar-value typescript"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar-title"><span>React</span><span>79%</span></div>
+                            <div class="bar-bg"><div class="bar-value react"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar-title"><span>NodeJs</span><span>68%</span></div>
+                            <div class="bar-bg"><div class="bar-value nodejs"></div></div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="skills-tools">
+                    <h3 class="skills-title">Tools</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Intellij</li>
+                        <li>Android Studio</li>
+                        <li>Eclipse</li>
+                        <li>MySQL Workbench</li>
+                    </ul>
+                </article>
+                <article class="skills-skills-etc">
+                    <h3 class="skills-title">Etc</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Scrum Master</li>
+                        <li>SVN</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="work">
+            <h2 class="title">My work</h2>
+            <p class="description"> Projects</p>
+            <ul class="categories">
+                <li><button class="category">All<span class="category-count">8</span></button></li>
+                <li><button class="category">Front end<span class="category-count">4</span></button></li>
+                <li><button class="category">Back-end<span class="category-count">2</span></button></li>
+                <li><button class="category">Mobile<span class="category-count">2</span></button></li>
+            </ul>
+            <ul class="projects">
+                <li class="project">
+                    <img class="project-img" src="image/projects/project1.webp" alt="pro-img1">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#1</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project2.webp" alt="pro-img2">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#2</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project3.webp" alt="pro-img3">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#3</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project4.webp" alt="pro-img4">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#4</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project5.webp" alt="pro-img5">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#5</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project6.webp" alt="pro-img6">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#6</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project7.webp" alt="pro-img7">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#7</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-img" src="image/projects/project8.webp" alt="pro-img8">
+                    <div class="project-meta">
+                        <h3 class="project-meta-title">Project#8</h3>
+                        <p>Clone Coding with HTML,CSS</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="testimonial">
+            <h2 class="title">testimonial</h2>
+            <p class="description">see what they say about me</p>
+            <ul class="testimonials">
+                <li class="testimonial">
+                    <img class="testimonial-img" 
+                        src="image/testimonials/people1.webp" alt="people1">
+                    <div class="testimonial-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quasi reprehenderit quaerat ab, impedit aliquam corrupti nesciunt 
+                            tempora harum earum labore corporis, facere assumenda! 
+                            Qui fugiat pariatur, voluptas repudiandae iure nulla.</p>
+                            <p><a href="#">
+                            <span class="testimonial-text-name">James Kim</span>
+                            <span class="testimonial-text-company">/ Samsung</span></a></p>   
+                        </a>
+                        </div>
+                </li>
+                <li class="testimonial">
+                    <img class="testimonial-img" 
+                        src="image/testimonials/people2.webp" alt="people3">
+                    <div class="testimonial-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quasi reprehenderit quaerat ab, impedit aliquam corrupti nesciunt 
+                            tempora harum earum labore corporis, facere assumenda! 
+                            Qui fugiat pariatur, voluptas repudiandae iure nulla.</p>
+                            <p><a href="#">
+                            <span class="testimonial-text-name">Smith Park</span>
+                            <span class="testimonial-text-company">/ Samsung</span></a></p>   
+                        </a>
+                    </div>
+                </li>
+                <li class="testimonial">
+                    <img class="testimonial-img" 
+                        src="image/testimonials/people3.webp" alt="people3">
+                    <div class="testimonial-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Quasi reprehenderit quaerat ab, impedit aliquam corrupti nesciunt 
+                            tempora harum earum labore corporis, facere assumenda! 
+                            Qui fugiat pariatur, voluptas repudiandae iure nulla.</p>
+                        <p><a href="#">
+                            <span class="testimonial-text-name">Anna Lee</span>
+                            <span class="testimonial-text-company">/ Samsung</span></a></p>   
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="content"></section>
+        <!--Arrow Top-->
+        <aside>
+            <a href="#" class="arrow-up"><i class="fa-solid fa-arrow-up"></i></a>
+        </aside>
+    </main>
+    <footer id="contact" class="footer">
+        <h2 class="title"> Let's Talk</h2>
+        <p class="description">com.developer.judy@email.com</p>
+        <ul class="contact-links">
+            <li>
+                <a href="#" class="contact-link"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+                <a href="#" class="contact-link"><i class="fa-brands fa-invision"></i></a>
+            </li>
+        </ul>
+        <p>Junior Software Engineer Judy's portfolio - All right reserved</p>
+    </footer>
 </body>
 </html>
